@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>314</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>256</width>
+     <height>393</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="text">
+     <string>Название</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit"/>
+   <widget class="QLabel" name="label_2">
+    <property name="text">
+     <string>Степень обжарки</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2"/>
+   <widget class="QLabel" name="label_3">
+    <property name="text">
+     <string>Статус (молотый / в зернах)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4"/>
+   <widget class="QLabel" name="label_4">
+    <property name="text">
+     <string>Описание вкуса</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit"/>
+   <widget class="QLabel" name="label_6">
+    <property name="text">
+     <string>Цена</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="maximum">
+     <double>5000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="text">
+     <string>Объем</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="maximum">
+     <number>5000</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
