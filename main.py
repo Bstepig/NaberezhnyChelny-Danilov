@@ -4,20 +4,19 @@
 import sqlite3
 import sys
 
+from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QWidget
-from ui_main import Ui_MainWindow
-from ui_addEditCoffeeForm import Ui_Form
 
 
-class Main(QMainWindow, Ui_MainWindow):
+class Main(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        uic.loadUi("main.ui", self)
         self.initUI()
         self.show()
 
     def initUI(self):
-        self.con = sqlite3.connect('data/coffee.sqlite')
+        self.con = sqlite3.connect('coffee.sqlite')
         self.load_table()
 
     def load_table(self):
@@ -86,9 +85,10 @@ WHERE ID = {data[0]}""", n_data)
         self.load_table()
 
 
-class ChangeForm(QWidget, Ui_Form):
+class ChangeForm(QWidget):
     def __init__(self):
         super().__init__()
+        uic.loadUi("addEditCoffeeForm.ui", self)
         self.setupUi(self)
         self.show()
 
